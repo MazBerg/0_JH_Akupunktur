@@ -1,6 +1,22 @@
+const navItem = document.querySelectorAll(".nav__item")
+const subMenuItems = document.querySelector(".nav__sub-item-container")
+let showItems = false
+
+function checkPage(){
+    navItem.forEach((item) => {
+        if(item.classList.contains("nav__sub-item")){
+            if(item.classList.contains("nav__current")){
+                showItems = true
+                subMenuItems.style.display = showItems ? "block" : "none"
+            }
+        }
+    })
+}
+
 const navBtn = document.querySelector(".nav-toggle")
 
 navBtn.addEventListener("click", () => {
+    checkPage()
     document.body.classList.toggle("open-nav")
 })
 
@@ -12,9 +28,8 @@ navLink.forEach((link) => {
     })
 })
 
+// Logic that will toggle the sub menu
 const navExt = document.getElementById("navext")
-const subMenuItems = document.querySelector(".nav__sub-item-container")
-let showItems = false
 
 navExt.addEventListener("click", () => {
     showItems = !showItems

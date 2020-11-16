@@ -220,13 +220,22 @@ body {
     line-height: 1.2;
 }
 
-.video-embed{
+.video-embed,
+.image-embed {
     width: 90vw;
     height: calc(90vw * 0.5625);
 }
 
+.image-embed {
+    margin-top: 1em;
+}
+
 .mobile-content-container p{
     width: 90%;
+}
+
+.bottom-btn-container {
+    margin-top: 2em;
 }
 
 .btn-mobile {
@@ -261,6 +270,7 @@ body {
 }
 
 .testimonial__img-mobile{
+    width: 128px;
     border-radius: 50%;
 }
 
