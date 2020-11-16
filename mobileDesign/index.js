@@ -11,3 +11,13 @@ navLink.forEach((link) => {
         document.body.classList.remove("open-nav")
     })
 })
+
+const navExt = document.getElementById("navext")
+const subMenuItems = document.querySelector(".nav__sub-item-container")
+let showItems = false
+
+navExt.addEventListener("click", () => {
+    showItems = !showItems
+    subMenuItems.style.display = showItems ? "block" : "none"
+
+})

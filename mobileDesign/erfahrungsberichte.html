@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maz Berg">
+
+    <title>SchmerzPunktTherapie</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./images/Web_Logo.png" alt="Logo SchmerzPunktTherapie">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation menu">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                <li class="nav__item" id="navext"><a href="#" class="nav__no-link">Behandlung</a></li>
+                    <ul class="nav__sub-item-container">
+                        <li class="nav__item nav__sub-item"><a href="#" class="nav__link">Was...</a></li>
+                        <li class="nav__item nav__sub-item"><a href="#" class="nav__link">Wie...</a></li>
+                        <li class="nav__item nav__sub-item"><a href="#" class="nav__link">Wo...</a></li>
+                    </ul>
+                <li class="nav__item nav__current"><a href="#" class="nav__link">Rezensionen</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+                <li class="nav__item nav__highlight"><a href="#" class="nav__link">Termine</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-testimonials">
+            <div class="mobile-content-container">
+                <h2>Erfahrungsberichte</h2>
+                <div class="testimonial">
+                    <!-- The img must be square i.e. 1:1 ratio -->
+                    <img 
+                        src="./images/testimonial_images/testimonial_sample_m_1.jpg" 
+                        alt="Picture of person who gave this testimonial" 
+                        class="testimonial__img-mobile"
+                    >
+                    <!-- Insert Stars -->
+                    <img 
+                        src="./images/testimonial_images/5_Stars.png" 
+                        alt="5 star rating" 
+                        class="testimonial__stars"
+                    >
+                    <h3 class="testimonial__name">Markus Bootmann</h3>
+                    <p class="testimonial__location">Tübingen</p>
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+                <div class="testimonial">
+                    <!-- The img must be square i.e. 1:1 ratio -->
+                    <img 
+                        src="./images/testimonial_images/testimonial_sample_f_1.jpg" 
+                        alt="Picture of person who gave this testimonial" 
+                        class="testimonial__img-mobile"
+                    >
+                    <!-- Insert Stars -->
+                    <img 
+                        src="./images/testimonial_images/5_Stars.png" 
+                        alt="5 star rating" 
+                        class="testimonial__stars"
+                    >
+                    <h3 class="testimonial__name">Tanja Meyer</h3>
+                    <p class="testimonial__location">Reutlingen</p>
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-testimonials">
+            <div class="mobile-content-container">
+                <div class="testimonial">
+                    <!-- The img must be square i.e. 1:1 ratio -->
+                    <img 
+                        src="./images/testimonial_images/testimonial_sample_m_1.jpg" 
+                        alt="Picture of person who gave this testimonial" 
+                        class="testimonial__img-mobile"
+                    >
+                    <!-- Insert Stars -->
+                    <img 
+                        src="./images/testimonial_images/5_Stars.png" 
+                        alt="5 star rating" 
+                        class="testimonial__stars"
+                    >
+                    <h3 class="testimonial__name">Markus Bootmann</h3>
+                    <p class="testimonial__location">Tübingen</p>
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+                <div class="testimonial">
+                    <!-- The img must be square i.e. 1:1 ratio -->
+                    <img 
+                        src="./images/testimonial_images/testimonial_sample_f_1.jpg" 
+                        alt="Picture of person who gave this testimonial" 
+                        class="testimonial__img-mobile"
+                    >
+                    <!-- Insert Stars -->
+                    <img 
+                        src="./images/testimonial_images/5_Stars.png" 
+                        alt="5 star rating" 
+                        class="testimonial__stars"
+                    >
+                    <h3 class="testimonial__name">Tanja Meyer</h3>
+                    <p class="testimonial__location">Reutlingen</p>
+                    <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>

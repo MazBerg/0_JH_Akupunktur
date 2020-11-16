@@ -122,6 +122,12 @@ body {
     margin-top: 0.5em;
 }
 
+.nav__sub-item-container {
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+
 .nav__sub-item {
     background-color: var(--clr-light-alt);
     margin-top: 0.05em;
@@ -136,18 +142,20 @@ body {
     content: "";
     position: absolute;
     left: 10%;
-    height: 57px;
+    height: 44px;
     width: 5px;
     background-color: var(--clr-accent);
 }
 
-.nav__link {
+.nav__link,
+.nav__no-link {
     color: var(--clr-text);
     text-decoration: none;
     transition: color 250ms linear;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__no-link:hover {
     color: var(--clr-accent);
 }
 
