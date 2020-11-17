@@ -325,3 +325,44 @@ body {
     margin-top: 0;
     margin-bottom: 1em;
 }
+
+/* Form Style */
+.form {
+    width: 90vw;
+}
+
+.form__label {
+    font-weight: var(--fw-reg);
+    color: var(--clr-accent);
+}
+
+.form__input {
+    width: 90vw;
+    height: 3em;
+    font-size: var(--fs-body);
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    border: #ccc 1px solid;
+    outline: none;
+}
+
+.form__input:focus{
+    border-left: 3px solid var(--clr-accent);
+}
+
+.form__upload {
+    width: 90vw;
+    height: 3em;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    color: var(--clr-accent);
+    margin-bottom: 1.5em;
+
+}
+
+.form__textarea {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    height: 15em;
+}
+

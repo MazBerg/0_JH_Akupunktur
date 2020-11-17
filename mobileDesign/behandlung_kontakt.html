@@ -34,7 +34,7 @@
                     </ul>
                 <li class="nav__item"><a href="./erfahrungsberichte.html" class="nav__link">Rezensionen</a></li>
                 <li class="nav__item  nav__current"><a href="#" class="nav__link">Kontakt</a></li>
-                <li class="nav__item nav__highlight"><a href="#" class="nav__link">Termine</a></li>
+                <li class="nav__item nav__highlight"><a href="./behandlung_buchen.html" class="nav__link">Termine</a></li>
             </ul>
         </nav>
     </header>
@@ -42,12 +42,39 @@
     <main>
         <div class="mobile-content-container">
             <h1>Ich freue mich von dir zu hören!</h1>
-            
+            <form action="" class="form">
+                <label for="v-name" class="form__label">Vorname</label><br>
+                <input type="text" id="v-name" name="v-name" class="form__input">
+                <br>
+
+                <label for="n-name"class="form__label">Nachname</label><br>
+                <input type="text" id="n-name" name="n-name" class="form__input">
+                <br>
+                
+                <input 
+                    type="button" 
+                    id="datei"
+                    class="form__upload" 
+                    value="Datei hochladen"
+                    onclick="document.getElementById('h-file').click()"
+                >
+                <input 
+                    type="file" 
+                    id="h-file" 
+                    name="datei" 
+                    style="display: none;"
+                    multiple
+                >
+                <div id="file-list"></div>
+                <br>
+
+                <label for="nachricht" class="form__label">Nachricht</label><br>
+                <textarea id="nachricht" name="nachricht" rows="10" class="form__input form__textarea"></textarea><br>
+
+                <button type="button" class="btn btn-mobile">Abschicken</button>
+            </form>
         </div>
-        <div class="mobile-content-container bottom-btn-container">
-            <p class="p-title">als nächstes...</p>
-            <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
-        </div>
+        
     </main>
 
     <script src="./index.js"></script>
