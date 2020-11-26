@@ -37,6 +37,27 @@
                 <li class="nav__item nav__highlight"><a href="./behandlung_buchen.html" class="nav__link">Termine</a></li>
             </ul>
         </nav>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="./index.html">Home</a></li>
+                <li class="navbar__item"><a href="#">Behandlung</a>
+                    <ul class="navbar__sub-item-container">
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_was.html" class="navbar__sub-item-link">Was...</a>
+                        </li>
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_wie.html" class="navbar__sub-item-link">Wie...</a>
+                        </li>
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_wo.html" class="navbar__sub-item-link">Wo...</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item"><a href="./erfahrungsberichte.html">Rezensionen</a></li>
+                <li class="navbar__item navbar__current"><a href="./behandlung_kontakt.html">Kontakt</a></li>
+                <li class="navbar__item"><a href="./behandlung_buchen.html">Termine</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -71,12 +92,29 @@
                 <label for="nachricht" class="form__label">Nachricht</label><br>
                 <textarea id="nachricht" name="nachricht" rows="10" class="form__input form__textarea"></textarea><br>
 
-                <button type="button" class="btn btn-mobile">Abschicken</button>
+                <button type="button" class="btn btn-mobile btn-form">Abschicken</button>
             </form>
         </div>
         
     </main>
 
+    <footer class="footer">
+        <div class="footer__bar">
+            <a href="#">Impressum</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="#">Datenschutzerklärung</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="">Disclaimer</a>
+        </div>
+        <p class="footer__copyright">
+            <span class="footer__copyright-notice">Copyright © </span>
+            <span class="footer__copyright-name">Johann-Martin Hempel 2020 </span>
+            <span class="footer__copyright-dash"> - </span><br class="footer__copyright-break">
+            <span class="footer__copyright-reserve">Alle Rechte vorbehalten</span>
+        </p>
+    </footer>
+
     <script src="./index.js"></script>
+    <script src="./kontakt.js"></script>
 </body>
 </html>

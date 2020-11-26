@@ -37,12 +37,33 @@
                 <li class="nav__item nav__highlight"><a href="./behandlung_buchen.html" class="nav__link">Termine</a></li>
             </ul>
         </nav>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="./index.html">Home</a></li>
+                <li class="navbar__item"><a href="#">Behandlung</a>
+                    <ul class="navbar__sub-item-container">
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_was.html" class="navbar__sub-item-link">Was...</a>
+                        </li>
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_wie.html" class="navbar__sub-item-link">Wie...</a>
+                        </li>
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_wo.html" class="navbar__sub-item-link">Wo...</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item navbar__current"><a href="./erfahrungsberichte.html">Rezensionen</a></li>
+                <li class="navbar__item"><a href="./behandlung_kontakt.html">Kontakt</a></li>
+                <li class="navbar__item"><a href="./behandlung_buchen.html">Termine</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="section-testimonials">
+        <!-- <section class="section-testimonials"> -->
             <div class="mobile-content-container">
-                <h2>Erfahrungsberichte</h2>
+                <h1 class="testimonial-header">Erfahrungsberichte</h1>
                 <div class="testimonial">
                     <!-- The img must be square i.e. 1:1 ratio -->
                     <img 
@@ -76,10 +97,10 @@
                     <h3 class="testimonial__name">Tanja Meyer</h3>
                     <p class="testimonial__location">Reutlingen</p>
                     <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                    <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
                 </div>
+                <button type="button" class="btn btn-mobile btn-testimonial">Zum Beratungsgespräch</button>
             </div>
-        </section>
+        <!-- </section> -->
         <section class="section-testimonials">
             <div class="mobile-content-container">
                 <div class="testimonial">
@@ -115,12 +136,28 @@
                     <h3 class="testimonial__name">Sahra Löffel</h3>
                     <p class="testimonial__location">Reutlingen</p>
                     <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                    <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
                 </div>
+                <button type="button" class="btn btn-mobile btn-testimonial">Zum Beratungsgespräch</button>
             </div>
         </section>
 
     </main>
+
+    <footer class="footer">
+        <div class="footer__bar">
+            <a href="#">Impressum</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="#">Datenschutzerklärung</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="">Disclaimer</a>
+        </div>
+        <p class="footer__copyright">
+            <span class="footer__copyright-notice">Copyright © </span>
+            <span class="footer__copyright-name">Johann-Martin Hempel 2020 </span>
+            <span class="footer__copyright-dash"> - </span><br class="footer__copyright-break">
+            <span class="footer__copyright-reserve">Alle Rechte vorbehalten</span>
+        </p>
+    </footer>
 
     <script src="./index.js"></script>
 </body>

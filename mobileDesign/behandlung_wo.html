@@ -37,6 +37,27 @@
                 <li class="nav__item nav__highlight"><a href="./behandlung_buchen.html" class="nav__link">Termine</a></li>
             </ul>
         </nav>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="./index.html">Home</a></li>
+                <li class="navbar__item navbar__current"><a href="#">Behandlung</a>
+                    <ul class="navbar__sub-item-container">
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_was.html" class="navbar__sub-item-link">Was...</a>
+                        </li>
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_wie.html" class="navbar__sub-item-link">Wie...</a>
+                        </li>
+                        <li class="navbar__sub-item navbar__sub-item-current">
+                            <a href="./behandlung_wo.html" class="navbar__sub-item-link">Wo...</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item"><a href="./erfahrungsberichte.html">Rezensionen</a></li>
+                <li class="navbar__item"><a href="./behandlung_kontakt.html">Kontakt</a></li>
+                <li class="navbar__item"><a href="./behandlung_buchen.html">Termine</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -44,16 +65,40 @@
             <h1>Wo finden Behandlungen statt?</h1>
             <img src="https://loremflickr.com/640/360" alt="something" class="image-embed">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            <img src="https://placekitten.com/640/360" alt="something" class="image-embed">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            <img src="http://lorempixel.com/640/360" alt="something" class="image-embed">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <div class="sub-content-container">
+                <h3 class="sub-content-header">In der Praxis</h3>
+                <img src="https://placekitten.com/640/360" alt="something" class="image-embed">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                <div style="clear: both;"></div>
+                <h3 class="sub-content-header">Bei Ihnen</h3>
+                <img src="http://lorempixel.com/640/360" alt="something" class="image-embed image-embed-right">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <div style="clear: both;"></div>
+            </div>
         </div>
         <div class="mobile-content-container bottom-btn-container">
             <p class="p-title">als nächstes...</p>
-            <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
+            <button type="button" class="btn btn-mobile btn-btm" onclick="window.location.href='./behandlung_buchen.html'">Zum Beratungsgespräch</button>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer__bar">
+            <a href="#">Impressum</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="#">Datenschutzerklärung</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="">Disclaimer</a>
+        </div>
+        <p class="footer__copyright">
+            <span class="footer__copyright-notice">Copyright © </span>
+            <span class="footer__copyright-name">Johann-Martin Hempel 2020 </span>
+            <span class="footer__copyright-dash"> - </span><br class="footer__copyright-break">
+            <span class="footer__copyright-reserve">Alle Rechte vorbehalten</span>
+        </p>
+    </footer>
 
     <script src="./index.js"></script>
 </body>

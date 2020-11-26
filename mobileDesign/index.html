@@ -37,6 +37,28 @@
                 <li class="nav__item nav__highlight"><a href="./behandlung_buchen.html" class="nav__link">Termine</a></li>
             </ul>
         </nav>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item navbar__current"><a href="#">Home</a></li>
+                <li class="navbar__item"><a href="#">Behandlung</a>
+                    <ul class="navbar__sub-item-container">
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_was.html" class="navbar__sub-item-link">Was...</a>
+                        </li>
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_wie.html" class="navbar__sub-item-link">Wie...</a>
+                        </li>
+                        <li class="navbar__sub-item">
+                            <a href="./behandlung_wo.html" class="navbar__sub-item-link">Wo...</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item"><a href="./erfahrungsberichte.html">Rezensionen</a></li>
+                <li class="navbar__item"><a href="./behandlung_kontakt.html">Kontakt</a></li>
+                <li class="navbar__item"><a href="./behandlung_buchen.html">Termine</a></li>
+            </ul>
+        </nav>
+
     </header>
 
     <main>
@@ -44,13 +66,13 @@
             <h1>Der erste Schritt zur Schmerzfreiheit</h1>
             <iframe class="video-embed" src="https://www.youtube.com/embed/L8r3pazgcPg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-            <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
+            <button type="button" onclick="window.location.href='./behandlung_buchen.html'" class="btn btn-mobile">Zum Beratungsgespräch</button>
         </div>
     </main>
 
     <section class="section-testimonials">
         <div class="mobile-content-container">
-            <h2>Erfahrungsberichte</h2>
+            <h2 class="testimonial-title">Erfahrungsberichte</h2>
             <div class="testimonial">
                 <!-- The img must be square i.e. 1:1 ratio -->
                 <img 
@@ -84,7 +106,7 @@
                 <h3 class="testimonial__name">Tanja Meyer</h3>
                 <p class="testimonial__location">Reutlingen</p>
                 <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                <button type="button" class="testimonial__btn-more">mehr...</button>
+                <button type="button" onclick="window.location.href='./erfahrungsberichte.html'" class="testimonial__btn-more btn">mehr...</button>
             </div>
             
         </div>
@@ -93,13 +115,30 @@
     <section>
         <div class="mobile-content-container">
             <p class="p-title">weiter zu...</p>
-            <button type="button" class="btn btn-light">
+            <button type="button" class="btn btn-light" onclick="window.location.href='./behandlung_was.html'">
                 Das<br />
                 <strong>"Was", "Wie" und "Wo"</strong><br />einer Behandlung
             </button>
-            <button type="button" class="btn btn-mobile">Zum Beratungsgespräch</button>
+            <button type="button" class="btn btn-mobile btn-btm" onclick="window.location.href='./behandlung_buchen.html'">Zum Beratungsgespräch</button>
         </div>
     </section>
+
+    
+    <footer class="footer">
+        <div class="footer__bar">
+            <a href="#">Impressum</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="#">Datenschutzerklärung</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="">Disclaimer</a>
+        </div>
+        <p class="footer__copyright">
+            <span class="footer__copyright-notice">Copyright © </span>
+            <span class="footer__copyright-name">Johann-Martin Hempel 2020 </span>
+            <span class="footer__copyright-dash"> - </span><br class="footer__copyright-break">
+            <span class="footer__copyright-reserve">Alle Rechte vorbehalten</span>
+        </p>
+    </footer>
 
     <script src="./index.js"></script>
 </body>
