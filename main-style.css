@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -9,7 +11,7 @@ html, body {
     padding: 0;    
 }
 
-.bg-image-orig {
+/* .bg-image-orig {
     background-image: url("./main-images/IMG_6755_shoulders-back_2500x1667.jpg");
     height: 100vh;
     background-position: center;
@@ -17,7 +19,7 @@ html, body {
     background-size: cover;
     z-index: -50;
     position: relative;
-} 
+}  */
 
 .bg-img-container {
     position: relative;
@@ -31,15 +33,107 @@ html, body {
     top: 0; left: 0; bottom: 0; right: 0; 
 }
 
+.btn-a-container,
+.btn-b-container,
+.btn-c-container,
+.btn-d-container {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 14px;
+    cursor: pointer;
+    z-index: 30;
+}
 
-.dot {
-    height: 25px;
-    width: 25px;
+.btn-a-pg-one,
+.btn-b-pg-one,
+.btn-c-pg-one,
+.btn-d-pg-one {
+    height: 18px;
+    width: 18px;
     background-color: #9A0201;
     border-radius: 50%;
     display: inline-block;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
-    top: 50px;
-    right: 100px;
+}
+
+.btn-a-ring-pg-one,
+.btn-b-ring-pg-one,
+.btn-c-ring-pg-one,
+.btn-d-ring-pg-one {
+    height: 30px;
+    width: 30px;
+    border: #9A0201 solid 3px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.01);
+    position: absolute;
+    z-index: 1;
+}
+
+.btn-d-outter-ring-pg-one {
+    height: 42px;
+    width: 42px;
+    border: #9A0201 solid 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    z-index: 1;
+}
+
+/* Button Title labels */
+
+.btn-a-title-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 350ms, opacity 350ms linear;
+    z-index: 3;
+}
+
+.btn-a-container:hover~.btn-a-title-container{
+    visibility: visible;
+    opacity: 1;        
+}
+
+.btn-a-title-container:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.btn-a-title-background {
+    width: 400px;
+    height: 40px;
+    background-color: #fff;
+    display: inline-flex;
+    position: absolute;
+    border: solid 1px #dddddd;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+    transform: translateX(-180px);
+    align-items: center;
+}
+
+.btn-title-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #707070;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 1em;
+}
+
+.btn-title-text strong {
+    font-weight: 700;
+}
+
+.btn-title-text strong:hover {
+    color: #9A0201;
 }
