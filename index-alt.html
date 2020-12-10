@@ -7,12 +7,13 @@
 
     <title>SchmerzPunktTherapie</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./main-style.css">
 </head>
 <body>
     <div class="bg-image">
         <div class="bg-img-container">
-            <img src="./main-images/IMG_6755_shoulders-back_2500x1667_borderAndCenterMark.jpg" alt="Akupunktur Hintergrund">
+            <img src="./main-images/IMG_6755_shoulders-back_2500x1667.jpg" alt="Akupunktur Hintergrund">
         </div>
 
         <div class="btn-a-container">
@@ -23,18 +24,26 @@
             <span class="btn-a-title-background">
                 <p class="btn-title-text"><em>Willkommen</em> - <strong>Der Erste Überblick</strong></p>
             </span>
-            <!-- <span class="btn-a-pg-one"></span>
-            <span class="btn-a-ring-pg-one"></span> -->
         </div>
 
         <div class="btn-b-container">
             <span class="btn-b-pg-one"></span>
             <span class="btn-b-ring-pg-one"></span>
         </div>
+        <div class="btn-b-title-container">
+            <span class="btn-b-title-background">
+                <p class="btn-title-text"><em>Deine Behandlung</em> - <strong>Das "Was", "Wie" und "Wo"</strong></p>
+            </span>
+        </div>
 
         <div class="btn-c-container">
             <span class="btn-c-pg-one"></span>
             <span class="btn-c-ring-pg-one"></span>
+        </div>
+        <div class="btn-c-title-container">
+            <span class="btn-c-title-background">
+                <p class="btn-title-text btn-title-text-c"><em>Fragen?</em> - <strong>Schreib mir!</strong></p>
+            </span>
         </div>
 
         <div class="btn-d-container">
@@ -42,7 +51,72 @@
             <span class="btn-d-ring-pg-one"></span>
             <span class="btn-d-outter-ring-pg-one"></span>
         </div>
+        <div class="btn-d-title-container">
+            <span class="btn-d-title-background">
+                <p class="btn-title-text"><em>Dein Termin</em> - <strong>Beratung oder Behandlung</strong></p>
+            </span>
+        </div>
+    </div> 
+
+    <div class="logo">
+        <img src="./main-images/Web_Logo.png" alt="SchmerzPunktTherapie Logo">
     </div>
+
+    <div class="review">
+        <div class="carousel">
+            <div class="slider">
+              <section class="slide slide-one">
+                  <div class="slide__container">
+                        <!-- The img must be square i.e. 1:1 ratio -->
+                        <img 
+                        src="./main-images/testimonial_images/testimonial_sample_f_1.jpg" 
+                        alt="Picture of person who gave this testimonial" 
+                        class="slide__img"
+                        >
+                        <!-- Insert Stars -->
+                        <img 
+                            src="./main-images/testimonial_images/5_Stars.png" 
+                            alt="5 star rating" 
+                            class="slide__stars"
+                        >
+                        <p class="slide__name-location"><span>Tanja Meyer</span> <em>Reutlingen</em></p>
+                        <hr class="slide__divider-bar">
+                        <p class="slide__text">Dr. Hempel hat magische Nadeln, mein Schmerz war innerhalb von... <a href="#" class="slide__text-more">mehr</a></p>
+                  </div>
+              </section>
+              <section class="slide slide-two">Erfahrungsbericht 2</section>
+              <section class="slide slide-three">Erfahrungsbericht 3</section>
+              <section class="slide slide-four">Erfahrungsbericht 4</section>
+              <section class="slide slide-five">Erfahrungsbericht 5</section>
+            </div>
+
+            <div class="controls">
+              <button class="next"><i class="material-icons">
+        keyboard_arrow_right
+        </i></button>
+              <button class="prev"><i class="material-icons">
+        keyboard_arrow_left
+        </i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__bar">
+            <a href="#">Impressum</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="#">Datenschutzerklärung</a>
+            <span class="footer__bar-separator">|</span>
+            <a href="">Disclaimer</a>
+        </div>
+        <p class="footer__copyright">
+            <span class="footer__copyright-notice">Copyright © </span>
+            <span class="footer__copyright-name">Johann-Martin Hempel 2020 </span>
+            <span class="footer__copyright-dash"> - </span>
+            <span class="footer__copyright-reserve">Alle Rechte vorbehalten</span>
+        </p>
+    </footer>
     
     <script src="./main-js.js"></script>
 </body>
