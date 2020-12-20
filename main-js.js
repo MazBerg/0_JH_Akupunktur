@@ -1,3 +1,9 @@
+// Loading Screen functionality
+window.addEventListener("load", () => {
+    const preload = document.querySelector("#loader")
+    preload.classList.add("finished-loading")
+})
+
 // Initializing x & y coordinates of buttons A-H
 let xCoBtnA = 0
 let yCoBtnA = 0
@@ -201,11 +207,12 @@ calcBtnPos() // initilize button pos
 
 window.onresize = calcBtnPos
 
-// Button functionality
+// Button functionality --------------------------------------------------------------------------
+// Reveal content A (Welcome)
 function showWelcome(){
-    const welcomeContent = document.querySelector('.content-container')
+    const welcomeContent = document.querySelector('.content-container-a')
     welcomeContent.classList.add("selected")
-    const clearBtn = document.querySelector('.content-container .inside-content__clear')
+    const clearBtn = document.querySelector('.content-container-a .inside-content__clear')
     clearBtn.addEventListener("click", () => {
         welcomeContent.classList.remove("selected")
     })
@@ -213,6 +220,21 @@ function showWelcome(){
 btnAOne.addEventListener("click", showWelcome)
 btnAOneTitle.addEventListener("click", showWelcome)
 
+// Reveal content D & H (Termin Buchen)
+function showAppointment(){
+    const welcomeContent = document.querySelector('.content-container-d')
+    welcomeContent.classList.add("selected")
+    const clearBtn = document.querySelector('.content-container-d .inside-content__clear')
+    clearBtn.addEventListener("click", () => {
+        welcomeContent.classList.remove("selected")
+    })
+}
+btnDOne.addEventListener("click", showAppointment)
+btnDOneTitle.addEventListener("click", showAppointment)
+btnHOne.addEventListener("click", showAppointment)
+btnHOneTitle.addEventListener("click", showAppointment)
+
+// Change Pages
 function showPageTwo(){
     const pageOne = document.querySelector('.bg-image.page-one')
     const pageTwo = document.querySelector('.bg-image.page-two')

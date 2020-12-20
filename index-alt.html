@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="./main-style.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preload-container" id="loader">
+        <div id="preload">
+            
+        </div>
+    </div>
+
     <!-- Page One -->
     <div class="bg-image page-one is-active">
         <div class="bg-img-container">
@@ -117,14 +124,36 @@
         <img src="./main-images/Web_Logo.png" alt="SchmerzPunktTherapie Logo">
     </div>
 
-    <!-- Content -->
-    <div class="content-container">
+    <!-- Content A (Welcome)-->
+    <div class="content-container-a">
         <div class="inside-content">
             <button class="inside-content__clear">
                 <i class="material-icons">
                 clear
                 </i>
             </button>
+        </div>
+    </div>
+
+    <!-- Content D & H (Termin Buchen)-->
+    <div class="content-container-d">
+        <div class="inside-content">
+            <button class="inside-content__clear">
+                <i class="material-icons">
+                clear
+                </i>
+            </button>
+            <h2>Buchen Sie Ihren Termin!</h2>
+            <div class="sub-content-container">
+                <iframe class="image-embed" src="https://www.youtube.com/embed/L8r3pazgcPg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                <div style="clear: both;"></div>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/maz-test?hide_landing_page_details=1&hide_gdpr_banner=1&text_color=707070&primary_color=9a0201"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                <!-- Calendly inline widget end -->
+            </div>
         </div>
     </div>
 
