@@ -500,7 +500,8 @@ section {
 .content-container-d,
 .content-container-e,
 .content-container-f,
-.content-container-g {
+.content-container-g,
+.content-container-t {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -520,7 +521,8 @@ section {
 .content-container-d.selected,
 .content-container-e.selected,
 .content-container-f.selected,
-.content-container-g.selected {
+.content-container-g.selected,
+.content-container-t.selected {
     visibility: visible;
     opacity: 1;
 }
@@ -660,6 +662,66 @@ section {
     border: none;
     border-radius: 1.25em; /* This needs to be HALF of height */
     margin-top: 1em;
+}
+
+/* Testimonial Page Styling */
+.testimonial {
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "image stars"
+        "image name"
+        "image location"
+        "image text"
+        ". more";
+    max-width: 100%;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    margin-bottom: 2em;
+}
+
+.testimonial__img-mobile {
+    width: 128px;
+    border-radius: 50%;
+    grid-area: image;
+    align-self: start;
+}
+
+.testimonial__stars {
+    width: 9em;
+    padding: 0.5em;
+    grid-area: stars;
+    padding-left: 0;
+}
+
+.testimonial__name {
+    color: #707070;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-area: name;
+}
+
+.testimonial__location {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+    font-style: italic;
+    font-weight: 300;
+    grid-area: location;
+    
+}
+
+.testimonial .testimonial__text {
+    grid-area: text;
+    text-align: unset;
+    margin-top: 1em;
+}
+
+.testimonial__btn-more {
+    grid-area: more;
+    text-align: unset;
+    padding-left: 0;
 }
 
 /* Form Style */

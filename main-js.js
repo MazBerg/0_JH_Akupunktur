@@ -46,6 +46,12 @@ const btnGOneTitle = document.querySelector(".btn-g-title-container")
 const btnHOne = document.querySelector(".btn-h-container")
 const btnHOneTitle = document.querySelector(".btn-h-title-container")
 
+const btnTOne = document.querySelector(".more-btn-1")
+const btnTTwo = document.querySelector(".more-btn-2")
+const btnTThree = document.querySelector(".more-btn-3")
+const btnTFour = document.querySelector(".more-btn-4")
+const btnTFive = document.querySelector(".more-btn-5")
+
 const btnBack = document.querySelector(".back-btn")
 
 function calcBtnPos() {
@@ -296,6 +302,22 @@ function showWo(){
 }
 btnGOne.addEventListener("click", showWo)
 btnGOneTitle.addEventListener("click", showWo)
+
+// Reveal content T (Testimonial)
+function showTestimonials(){
+    const testimonialContent = document.querySelector('.content-container-t')
+    testimonialContent.classList.add("selected")
+    const clearBtn = document.querySelector('.content-container-t .inside-content__clear')
+    clearBtn.addEventListener("click", () => {
+        testimonialContent.classList.remove("selected")
+    })
+}
+btnTOne.addEventListener("click", showTestimonials)
+btnTTwo.addEventListener("click", showTestimonials)
+btnTThree.addEventListener("click", showTestimonials)
+btnTFour.addEventListener("click", showTestimonials)
+btnTFive.addEventListener("click", showTestimonials)
+
 
 // Change Pages (Button B functionality)
 function showPageTwo(){
