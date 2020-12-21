@@ -220,6 +220,33 @@ function showWelcome(){
 btnAOne.addEventListener("click", showWelcome)
 btnAOneTitle.addEventListener("click", showWelcome)
 
+// Reveal content C (Kontakt)
+function showForm(){
+    const formContent = document.querySelector('.content-container-c')
+    formContent.classList.add("selected")
+    const clearBtn = document.querySelector('.content-container-c .inside-content__clear')
+    clearBtn.addEventListener("click", () => {
+        formContent.classList.remove("selected")
+    })
+}
+btnCOne.addEventListener("click", showForm)
+btnCOneTitle.addEventListener("click", showForm)
+
+// Logic to list uploaded files
+const inputFormElement = document.getElementById("h-file")
+const fileListElement = document.getElementById("file-list")
+inputFormElement.onchange = handleChange
+
+function handleChange(){
+    let fileList = ""
+    for(let i = 0; i < inputFormElement.files.length; i++){
+        let fileName = inputFormElement.files.item(i).name
+        fileList += `<div>${fileName}<div>`
+        // console.log(fileName)
+    }
+    fileListElement.innerHTML = fileList
+}
+
 // Reveal content D & H (Termin Buchen)
 function showAppointment(){
     const welcomeContent = document.querySelector('.content-container-d')
@@ -234,7 +261,43 @@ btnDOneTitle.addEventListener("click", showAppointment)
 btnHOne.addEventListener("click", showAppointment)
 btnHOneTitle.addEventListener("click", showAppointment)
 
-// Change Pages
+// Reveal content E (Was)
+function showWas(){
+    const wasContent = document.querySelector('.content-container-e')
+    wasContent.classList.add("selected")
+    const clearBtn = document.querySelector('.content-container-e .inside-content__clear')
+    clearBtn.addEventListener("click", () => {
+        wasContent.classList.remove("selected")
+    })
+}
+btnEOne.addEventListener("click", showWas)
+btnEOneTitle.addEventListener("click", showWas)
+
+// Reveal content F (Wie)
+function showWie(){
+    const wieContent = document.querySelector('.content-container-f')
+    wieContent.classList.add("selected")
+    const clearBtn = document.querySelector('.content-container-f .inside-content__clear')
+    clearBtn.addEventListener("click", () => {
+        wieContent.classList.remove("selected")
+    })
+}
+btnFOne.addEventListener("click", showWie)
+btnFOneTitle.addEventListener("click", showWie)
+
+// Reveal content G (Wo)
+function showWo(){
+    const woContent = document.querySelector('.content-container-g')
+    woContent.classList.add("selected")
+    const clearBtn = document.querySelector('.content-container-g .inside-content__clear')
+    clearBtn.addEventListener("click", () => {
+        woContent.classList.remove("selected")
+    })
+}
+btnGOne.addEventListener("click", showWo)
+btnGOneTitle.addEventListener("click", showWo)
+
+// Change Pages (Button B functionality)
 function showPageTwo(){
     const pageOne = document.querySelector('.bg-image.page-one')
     const pageTwo = document.querySelector('.bg-image.page-two')
